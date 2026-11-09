@@ -1,6 +1,6 @@
 # Java Development Training
 
-8-week Java developer training and engineering readiness program.
+Java developer training and engineering readiness program.
 
 ## Progress
 
