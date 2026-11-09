@@ -1,2 +1,12 @@
-# java-development-training
-Java developer training program: weekly and daily assignments covering Java 21, Spring Boot, and engineering best practices.
+# Java Development Training
+
+8-week Java developer training and engineering readiness program.
+
+## Progress
+
+| Week | Day | Topic | Project |
+|------|-----|-------|---------|
+| 1 | Day 1 | Java ecosystem, Java 17 and 21 features | [payment-service](week1/day1-payment-service) |
+
+## Tech Stack
+Java 21, Spring Boot, Maven
