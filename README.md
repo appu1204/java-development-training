@@ -10,3 +10,4 @@ Java developer training and engineering readiness program.
 
 ## Tech Stack
 Java 21, Spring Boot, Maven
+| 1 | Day 2 | Employee payroll | [employee-payroll](week1/day2-employee-payroll) |
