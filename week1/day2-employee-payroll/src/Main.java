@@ -5,7 +5,10 @@ public class Main {
 
     private static final Scanner scanner = new Scanner(System.in);
     private static final ArrayList<Employee> employees = new ArrayList<>();
-    private static final ArrayList<Department> departments = new ArrayList<>();
+    private static final ArrayList<Department> departments = new ArrayList<>(List.of(
+        new Department("D1", "Engineering"),
+        new Department("D2", "Human Resources"),
+        new Department("D3", "Finance")));
     public static void main(String[] args) {
 
         while(true) {
@@ -32,6 +35,11 @@ public class Main {
         try {
             System.out.print("ID: ");
             String id = scanner.nextLine().trim();
+
+            if (employees.stream().anyMatch(emp -> emp.getId().equals(id))) {
+                System.out.println("Employee with ID " + id + " already exists");
+                return;
+            }
             
             System.out.print("Name: ");
             String name = scanner.nextLine().trim();
@@ -45,7 +53,7 @@ public class Main {
             Department dept = pick("Department", departments, Department::name);
         
             Designation des = pick("Designation", 
-                    Arrays.asList(Designation.values()),
+                    Arrays.asList(Designation.values()), 
                     Designation::getTitle);
 
             EmploymentType type = pick("EmploymentType", 
